@@ -1,0 +1,181 @@
+/* ************************TAG SELECTORS************************ */
+
+body{
+    font-family: 'Montserrat', sans-serif; 
+    font-weight: 900;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+p{
+    color: #8f8f8f;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 300;
+}
+/* ************************CLASS SELECTORS************************ */
+
+.big-heading{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.colored-section{
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.container-fluid{
+    padding: 7% 15%;
+}
+
+.download-btn{
+    margin: 5% 3% 5% 0;
+}
+
+.footer-icon{
+    margin: 20px 10px;
+}
+
+.feature-box{
+    padding: 5%;
+    
+}
+
+.feature-desc{
+    color: #8f8f8f;
+    font-family: 'Montserrat' sans-serif;
+    font-weight: 300;
+}
+
+.feature-img{
+    color: #ef8172;
+    margin-bottom: 1rem;
+}
+
+.feature-img:hover{
+    color: #ff4c6b;
+}
+
+.feature-title{
+    font-size: 1.5rem;
+}
+
+.navbar{
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item{
+    padding: 0 18px;
+}
+
+.nav-link{
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+}
+
+.press-logo{
+    width: 15%;
+    /* top left+right bottom */
+    margin: 20px 20px 5px;
+}
+
+.price-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.pricing-col{
+    padding: 3% 2%;
+}
+
+.section-heading{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.testimonial-img{
+    border-radius: 100%;
+    margin: 20px;
+    width: 10%;
+
+}
+
+.testimonial-text{
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+.title-img{
+    right: 25%;
+    width: 20%;
+    transform: rotate(25deg);
+    position: absolute;
+    /* z-index: -1; */
+}
+
+.white-section{
+    background-color: #fff;
+}
+/* ************************ID SELECTORS************************ */
+
+#features{
+    position: relative;
+    /* z-index: 1;  */ 
+}
+
+#press{
+    background-color: #ef8172;
+    padding-bottom: 3%;
+
+}
+
+#pricing{
+    padding: 100px;
+    
+}
+
+#testimonials{
+    background-color: #ef8172;   
+}
+
+
+/* IMP: combining selectors
+    w/o space:  (parent child) i.e all child inside the parent
+                read from right to left 
+                hierarchical
+    with space: occur in same element
+                read from left to right
+*/
+
+#title .container-fluid{
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+/* ************************MEDIA QUERIES************************ */
+
+@media ( max-width: 1028px){
+    
+    #title{
+        text-align: center;
+    }
+    
+    .title-img{
+        position: static;
+        transform: rotate(0);
+    }
+}
